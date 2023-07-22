@@ -25,6 +25,8 @@ return {
 	vim.cmd("nnoremap K 5k"),
 	vim.cmd('nnoremap "" vi"'),
 	vim.cmd("vnoremap am aBjoV"),
+	vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv"),
+	vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv"),
 
 
 }
